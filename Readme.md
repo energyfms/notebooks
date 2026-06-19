@@ -48,29 +48,21 @@ pip install -r requirements.txt
 ## Getting Started
 
 - **Zero-Shot Forecasting with Energy-TTM**  
-  [Open Notebook](https://github.com/energyfms/notebooks/blob/main/Notebooks/energy-TTM-zeroshot.ipynb)
+  [Open Notebook](https://github.com/energyfms/notebooks/blob/main/energy_ttm_zeroshot.ipynb)
 
 - **Zero-Shot Anomaly Detection with Energy-TSPulse**  
-  [Open Notebook](https://github.com/energyfms/notebooks/blob/main/Notebooks/energy-tspulse_anomaly_detection_zeroshot.ipynb)
+  [Open Notebook](https://github.com/energyfms/notebooks/blob/main/energy-tspulse_anomaly_detection_zeroshot.ipynb)
 
 - **Fine-Tuning Energy-TSPulse for Anomaly Detection**  
-  [Open Notebook](https://github.com/energyfms/notebooks/blob/main/Notebooks/energy-tspulse_anomaly_detection_finetune.ipynb)
+  [Open Notebook](https://github.com/energyfms/notebooks/blob/main/energy_tspulse_anomaly_detection_finetune.ipynb)
 
 - **Appliance Classification with Energy-TSPulse (Fine-Tuning)**  
-  [Open Notebook](https://github.com/energyfms/notebooks/blob/main/Notebooks/energy_tspulse_classification_finetuning.ipynb)
+  [Open Notebook](https://github.com/energyfms/notebooks/blob/main/energy_tspulse_classification_finetuning.ipynb)
 
 - **Fine-Tuning Energy-TTM for Forecasting**  
-  [Open Notebook](https://github.com/energyfms/notebooks/blob/main/Notebooks/energy-TTM-finetuning.ipynb)
+  [Open Notebook](https://github.com/energyfms/notebooks/blob/main/energy_ttm-finetuning.ipynb)
 
 ---
-
-## Dependencies
-
-EnergyFM builds on IBM’s **Granite Time Series Foundation Models (TSFM)**, which
-provide the core TSFM architectures and Hugging Face integration.
-
-* Granite TSFM GitHub: [https://github.com/ibm-granite/granite-tsfm](https://github.com/ibm-granite/granite-tsfm)
-* Granite TSFM Wiki: [https://github.com/ibm-granite/granite-tsfm/wiki](https://github.com/ibm-granite/granite-tsfm/wiki)
 
 ---
 
