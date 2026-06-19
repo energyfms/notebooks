@@ -1,0 +1,24 @@
+# -------------------------
+# Core dependencies
+# -------------------------
+torch>=2.1
+numpy
+pandas
+scikit-learn
+einops
+tqdm
+
+# -------------------------
+# Granite TSFM + notebooks extras
+# (equivalent to: pip install ".[notebooks]")
+# -------------------------
+granite-tsfm[notebooks] @ git+https://github.com/ibm-granite/granite-tsfm.git
+
+# -------------------------
+# Notebook & visualization utilities
+# (kept explicit for stability)
+# -------------------------
+jupyter
+ipykernel
+matplotlib
+seaborn
