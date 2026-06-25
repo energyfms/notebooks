@@ -1,111 +1,171 @@
+<div align="center">
+
 # EnergyFM
 
-EnergyFM are **pretrained time series foundation models**
-applied to **energy meter data**. It provides pretrained models, example pipelines,
-and tutorial notebooks for **forecasting, anomaly detection, and classification**
-on large-scale smart meter datasets.
+### Pretrained Time Series Foundation Models for Energy Meter Data Analytics
+
+[![Paper](https://img.shields.io/badge/Paper-ACM%20e--Energy%202026-B31B1B)](https://doi.org/10.1145/3744255.3798119)
+[![Website](https://img.shields.io/badge/Website-EnergyFM-2ea44f)](https://energyfms.github.io/)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-FFD21E)](https://huggingface.co/EnergyFM)
+[![Leaderboard](https://img.shields.io/badge/Leaderboard-EnergyBench-blue)](https://huggingface.co/spaces/EnergyFM/Leaderboard)
+
+**Quick Links**
+[Website](https://edgeintelligencelab.github.io/energyfm/) •
+[Paper](https://doi.org/10.1145/3744255.3798119) •
+[Hugging Face](https://huggingface.co/EnergyFM) •
+[Leaderboard](https://huggingface.co/spaces/EnergyFM/Leaderboard) •
+[Energy-TTM](https://huggingface.co/EnergyFM/energy-ttm) •
+[Energy-TSPulse](https://huggingface.co/EnergyFM/energy-tspulse)
+
+</div>
+
+---
+
+## 📖 Introduction
+
+**EnergyFM** is a suite of **pretrained time series foundation models (TSFMs)** for **energy meter data analytics**. It provides pretrained models, example pipelines, and tutorial notebooks for **short-term load forecasting, anomaly detection, and appliance classification** on large-scale smart meter datasets.
 
 EnergyFM is designed to support:
-- Zero-shot inference on unseen buildings and regions
-- Fine-tuning for downstream energy analytics tasks
-- Reproducible research and benchmarking
+
+* **Zero-shot inference** on unseen buildings and regions
+* **Fine-tuning** for downstream energy analytics tasks
+* **Reproducible benchmarking** across forecasting and representation-learning tasks
 
 This repository accompanies the paper:
 
-**EnergyFM: Pretrained Models for Energy Meter Data Analytics**  
-*ACM e-Energy 2026*
+> **EnergyFM: Pretrained Models for Energy Meter Data Analytics**
+> *ACM e-Energy 2026*
 
 ---
 
-## Models Included
+## ⚡ Models
 
-EnergyFM currently includes two pretrained models, each designed for a distinct
-class of energy time series tasks.
+EnergyFM currently includes two pretrained models, each targeting a different class of energy analytics tasks:
 
-| Model | Primary Use | Supported Tasks |
-|------|------------|-----------------|
-| **Energy-TTM** | Forecasting | Short-term load forecasting |
-| **Energy-TSPulse** | Representation learning | Classification, anomaly detection |
-
+| Model              | Architecture          | Primary Use             | Supported Tasks                             |
+| ------------------ | --------------------- | ----------------------- | ------------------------------------------- |
+| **Energy-TTM**     | Tiny Time Mixer (TTM) | Forecasting             | Short-term load forecasting                 |
+| **Energy-TSPulse** | TSPulse               | Representation learning | Anomaly detection, appliance classification |
 
 ---
 
-## Installation
+## 🌍 Energy Benchmark 
+
+To compare EnergyFM against other state-of-the-art time series foundation models for energy analytics, visit our public benchmark leaderboard:
+
+👉 **[Energy Benchmark Leaderboard](https://huggingface.co/spaces/EnergyFM/Leaderboard)**
+
+The leaderboard provides standardized evaluations across multiple energy forecasting, anomaly detection, and classification tasks, allowing direct comparison between EnergyFM and other TSFMs under consistent evaluation settings.
+
+---
+
+## 🗂 Repository Structure
+
+
+```text id="4x4vkn"
+Dataset/             # Small samples from datasets used in the paper
+Energy-TTM/          # Energy-TTM: Model Checkpoint and config for Energy-TTM
+Energy-TSPulse/      # Energy-TSPulse: Model Checkpoint and config for Energy-TSPulse
+Notebooks/           # Tutorial notebooks and example workflows
+```
+
+---
+
+## 🧑‍💻 Installation
 
 Clone the repository:
 
-```bash
-git clone https://github.com/energyfms/notebooks.git
-cd notebooks
+```bash id="74otj1"
+git clone https://github.com/EdgeIntelligenceLab/energyfm.git
+cd energyfm
 ```
 
 Install dependencies:
 
-```bash
+```bash id="5o8r0m"
 pip install -r requirements.txt
 ```
 
-## Getting Started
+---
 
-- **Zero-Shot Forecasting with Energy-TTM**  
-  [Open Notebook](https://github.com/energyfms/notebooks/blob/main/energy_ttm_zeroshot.ipynb)
+## 🚀 Getting Started
 
-- **Zero-Shot Anomaly Detection with Energy-TSPulse**  
+### Energy-TTM
+
+* **Zero-Shot Forecasting**
+  [Open Notebook](https://github.com/energyfms/notebooks/blob/main/energy-TTM-zeroshot.ipynb)
+
+* **Fine-Tuning for Forecasting**
+  [Open Notebook](https://github.com/energyfms/notebooks/blob/main/energy-TTM-finetuning.ipynb)
+
+### Energy-TSPulse
+
+* **Zero-Shot Anomaly Detection**
   [Open Notebook](https://github.com/energyfms/notebooks/blob/main/energy-tspulse_anomaly_detection_zeroshot.ipynb)
 
-- **Fine-Tuning Energy-TSPulse for Anomaly Detection**  
-  [Open Notebook](https://github.com/energyfms/notebooks/blob/main/energy_tspulse_anomaly_detection_finetune.ipynb)
+* **Fine-Tuning for Anomaly Detection**
+  [Open Notebook](https://github.com/energyfms/notebooks/blob/main/energy-tspulse_anomaly_detection_finetune.ipynb)
 
-- **Appliance Classification with Energy-TSPulse (Fine-Tuning)**  
+* **Appliance Classification (Fine-Tuning)**
   [Open Notebook](https://github.com/energyfms/notebooks/blob/main/energy_tspulse_classification_finetuning.ipynb)
 
-- **Fine-Tuning Energy-TTM for Forecasting**  
-  [Open Notebook](https://github.com/energyfms/notebooks/blob/main/energy_ttm-finetuning.ipynb)
+---
+
+## 🤗 Pretrained Models
+
+Pretrained checkpoints and model cards are hosted on Hugging Face:
+
+* **Energy-TTM** — forecasting model for short-term load forecasting
+  [View Model Card](https://huggingface.co/EnergyFM/energy-ttm)
+
+* **Energy-TSPulse** — representation model for anomaly detection and appliance classification
+  [View Model Card](https://huggingface.co/EnergyFM/energy-tspulse)
 
 ---
 
----
+## 🔧 Dependencies
 
-## Datasets
+EnergyFM builds on IBM’s **Granite Time Series Foundation Models (TSFM)** ecosystem, which provides the core model implementations and Hugging Face integration.
 
-This repository does **not** host full datasets.
-
-* Small samples may be included for demonstration purposes
-* Full datasets used for pretraining and evaluation are released separately
-
-Links to datasets and pretrained weights are provided via Hugging Face.
-
+* **Granite TSFM GitHub:** [ibm-granite/granite-tsfm](https://github.com/ibm-granite/granite-tsfm)
+* **Granite TSFM Wiki:** [Granite TSFM Wiki](https://github.com/ibm-granite/granite-tsfm/wiki)
 
 ---
 
-## Issues
+## 📂 Datasets
 
-Please report bugs or questions via GitHub Issues:
+This repository does **not** host the full pretraining or evaluation datasets.
 
-[https://github.com/energyfms/notebooks/issues](https://github.com/energyfms/notebooksissues)
+* Small sample datasets may be included for demonstration and tutorials
+* Full datasets used in the paper are released separately
+* Links to datasets and pretrained weights are provided through the project website and Hugging Face model cards
 
 ---
 
-## Citation
+## 📝 Citation
 
 If you use EnergyFM in your research, please cite:
 
-```bibtex
-@article{energyfm2026,
-  title   = {EnergyFM: Pretrained Models for Energy Meter Data Analytics},
-  author  = {Arjunan, Pandarasamy and Srivastava, Naman and Kumar, Kajeeth
-             and Jati, Arindam and Ekambaram, Vijay and Dayama, Pankaj},
-  journal = {ACM e-Energy},
-  year    = {2026}
+```bibtex"
+@inproceedings{energyfm,
+  author    = {Arjunan, Pandarasamy and Srivastava, Naman and Kumar, Kajeeth and Jati, Arindam and Ekambaram, Vijay and Dayama, Pankaj},
+  title     = {EnergyFM: Pretrained Models for Energy Meter Data Analytics},
+  year      = {2026},
+  isbn      = {9798400720116},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3744255.3798119},
+  doi       = {10.1145/3744255.3798119},
+  booktitle = {Proceedings of the 17th ACM International Conference on Future and Sustainable Energy Systems},
+  pages     = {556--568},
+  series    = {E-Energy '26}
 }
 ```
 
 ---
-<!-- 
-## Notice
 
-EnergyFM builds on IBM Granite TSFM models available through the Hugging Face
-`transformers` ecosystem. As the project evolves, code and documentation may
-change accordingly. -->
+## ❓ Issues and Support
 
+Please report bugs, feature requests, or questions via GitHub Issues:
 
+https://github.com/EdgeIntelligenceLab/energyfm/issues
