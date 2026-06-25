@@ -10,7 +10,7 @@
 [![Leaderboard](https://img.shields.io/badge/Leaderboard-EnergyBench-blue)](https://huggingface.co/spaces/EnergyFM/Leaderboard)
 
 **Quick Links**
-[Website](https://edgeintelligencelab.github.io/energyfm/) •
+[Website](https://energyfms.github.io/) •
 [Paper](https://doi.org/10.1145/3744255.3798119) •
 [Hugging Face](https://huggingface.co/EnergyFM) •
 [Leaderboard](https://huggingface.co/spaces/EnergyFM/Leaderboard) •
@@ -20,6 +20,8 @@
 </div>
 
 ---
+
+
 
 ## 📖 Introduction
 
