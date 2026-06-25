@@ -61,25 +61,13 @@ The leaderboard provides standardized evaluations across multiple energy forecas
 
 ---
 
-## 🗂 Repository Structure
-
-
-```text id="4x4vkn"
-Dataset/             # Small samples from datasets used in the paper
-Energy-TTM/          # Energy-TTM: Model Checkpoint and config for Energy-TTM
-Energy-TSPulse/      # Energy-TSPulse: Model Checkpoint and config for Energy-TSPulse
-Notebooks/           # Tutorial notebooks and example workflows
-```
-
----
-
 ## 🧑‍💻 Installation
 
 Clone the repository:
 
 ```bash id="74otj1"
-git clone https://github.com/EdgeIntelligenceLab/energyfm.git
-cd energyfm
+git clone https://github.com/energyfms/notebooks.git
+cd notebooks
 ```
 
 Install dependencies:
@@ -170,4 +158,4 @@ If you use EnergyFM in your research, please cite:
 
 Please report bugs, feature requests, or questions via GitHub Issues:
 
-https://github.com/EdgeIntelligenceLab/energyfm/issues
+https://github.com/energyfm/notebooks/issues
