@@ -82,23 +82,18 @@ pip install -r requirements.txt
 
 ### Energy-TTM
 
-* **Zero-Shot Forecasting**
-  [Open Notebook](https://github.com/energyfms/notebooks/blob/main/energy-TTM-zeroshot.ipynb)
-
-* **Fine-Tuning for Forecasting**
-  [Open Notebook](https://github.com/energyfms/notebooks/blob/main/energy-TTM-finetuning.ipynb)
+| Tutorial | GitHub | Colab |
+|----------|--------|--------|
+| **Zero-Shot Forecasting** | [Notebook](https://github.com/energyfms/notebooks/blob/main/energy_ttm_zeroshot.ipynb) | <a target="_blank" href="https://colab.research.google.com/github/energyfms/notebooks/blob/main/energy_ttm_zeroshot.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
+| **Fine-Tuning for Forecasting** | [Notebook](https://github.com/energyfms/notebooks/blob/main/energy_ttm_finetuning.ipynb) | <a target="_blank" href="https://colab.research.google.com/github/energyfms/notebooks/blob/main/energy_ttm_finetuning.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
 
 ### Energy-TSPulse
 
-* **Zero-Shot Anomaly Detection**
-  [Open Notebook](https://github.com/energyfms/notebooks/blob/main/energy-tspulse_anomaly_detection_zeroshot.ipynb)
-
-* **Fine-Tuning for Anomaly Detection**
-  [Open Notebook](https://github.com/energyfms/notebooks/blob/main/energy-tspulse_anomaly_detection_finetune.ipynb)
-
-* **Appliance Classification (Fine-Tuning)**
-  [Open Notebook](https://github.com/energyfms/notebooks/blob/main/energy_tspulse_classification_finetuning.ipynb)
-
+| Tutorial | GitHub | Colab |
+|----------|--------|--------|
+| **Zero-Shot Anomaly Detection** | [Notebook](https://github.com/energyfms/notebooks/blob/main/energy_tspulse_anomaly_detection_zeroshot.ipynb) | <a target="_blank" href="https://colab.research.google.com/github/energyfms/notebooks/blob/main/energy_tspulse_anomaly_detection_zeroshot.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
+| **Fine-Tuning for Anomaly Detection** | [Notebook](https://github.com/energyfms/notebooks/blob/main/energy_tspulse_anomaly_detection_finetuning.ipynb) | <a target="_blank" href="https://colab.research.google.com/github/energyfms/notebooks/blob/main/energy_tspulse_anomaly_detection_finetuning.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
+| **Appliance Classification (Fine-Tuning)** | [Notebook](https://github.com/energyfms/notebooks/blob/main/energy_tspulse_classification_finetuning.ipynb) | <a target="_blank" href="https://colab.research.google.com/github/energyfms/notebooks/blob/main/energy_tspulse_classification_finetuning.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> |
 ---
 
 ## 🤗 Pretrained Models
