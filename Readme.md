@@ -51,11 +51,11 @@ EnergyFM currently includes two pretrained models, each targeting a different cl
 
 ---
 
-## 🌍 Energy Benchmark 
+## 🌍 Multi-Task Evaluation 
 
-To compare EnergyFM against other state-of-the-art time series foundation models for energy analytics, visit our public benchmark leaderboard:
+To compare EnergyFM against other state-of-the-art time series foundation models for energy analytics, visit our public leaderboard:
 
-👉 **[Energy Benchmark Leaderboard](https://huggingface.co/spaces/EnergyFM/Leaderboard)**
+👉 **[Energy Multi-Task Leaderboard](https://huggingface.co/spaces/EnergyFM/Leaderboard)**
 
 The leaderboard provides standardized evaluations across multiple energy forecasting, anomaly detection, and classification tasks, allowing direct comparison between EnergyFM and other TSFMs under consistent evaluation settings.
 
